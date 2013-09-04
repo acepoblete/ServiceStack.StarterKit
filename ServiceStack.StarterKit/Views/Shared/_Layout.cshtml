@@ -1,0 +1,31 @@
+@using DaSco.StarterKit.Razor
+@{
+    ViewBag.ProjectName = "Starter Kit";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Html.Partial("Header")
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
+        }
+    </style>
+    @RenderSection("Styles")
+</head>
+
+<body>
+    @Html.Partial("NavBar")
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @Html.Partial("Footer")
+    @RenderSection("Scripts")
+</body>
+</html>

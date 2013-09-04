@@ -1,0 +1,20 @@
+@using DaSco.StarterKit.Razor
+@{
+    ViewBag.ProjectName = "Starter Kit";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Html.Partial("Header")
+    @RenderSection("Styles")
+</head>
+
+    <body>
+        <div class="container">
+            @RenderBody()
+        </div>
+
+        @Html.Partial("Footer")
+        @RenderSection("Scripts")
+    </body>
+</html>
